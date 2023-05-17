@@ -617,7 +617,7 @@ Usage
       return;
     }
     if (!queuePolicyEnabled) {
-      // The user wants to use their IAM policy and does not want plugin to automatically append to default one.
+      // The user wants to use their own IAM policy and does not want plugin to automatically append to the default one.
       return;
     }
     const queues = [{ "Fn::GetAtt": [`${name}Queue`, "Arn"] }];
